@@ -22,11 +22,12 @@
    for (let item in localStorage) {
      console.log(item)
      if (!['[object HTMLInputElement]', '[object Window]', 'length', 'clear', 'getItem', 'key', 'removeItem', 'setItem'].includes(item)) {
-        document.write(localStorage[item]); 
+        document.write('<p id=' + localStorage[item] + '</p>'); 
         document.write('<br />')
      }
      
    }
+   document.onclick(e => e)
   </script>
 </body>
 </html>
