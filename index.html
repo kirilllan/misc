@@ -12,9 +12,21 @@
     <label for="task">task</label>
     <input type="text" name="task" id="task">
     <script>
-      
+      //script here
     </script>
     <button type="submit" onclick="localStorage.setItem(task.value, task.value)">task up</button>
   </form>
+  <script>
+    // let items = {...localStorage}
+    // console.log(items)
+   for (let item in localStorage) {
+     console.log(item)
+     if (!['[object HTMLInputElement]', '[object Window]', 'length', 'clear', 'getItem', 'key', 'removeItem', 'setItem'].includes(item)) {
+        document.write(localStorage[item]); 
+        document.write('<br />')
+     }
+     
+   }
+  </script>
 </body>
 </html>
