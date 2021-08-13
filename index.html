@@ -8,23 +8,18 @@
     </form>
     <script defer>
       function remove(el) {
-        let element = el;
         localStorage.removeItem(el);
-        element.remove();
+        document.getElementById(el).remove();
+        document.getElementById(el+"button").remove();
       }
       for (let item in localStorage) {
-        console.log(item);
         if (!["[object HTMLInputElement]","[object Window]","length","clear","getItem","key","removeItem","setItem",].includes(item)) {
           localStorage.setItem(item, item);
-          document.write("<p id=" + localStorage[item] + "></p>");
-          document.write(localStorage[item]);
+          document.write("<p id=" + item + ">" + item + "</p>");
           document.write("<br />");
+          document.write(`<button id=${item}button onclick=javascript:remove(${item})>X</button>`)
         }
       }
-
-      console.log("---");
-      console.log("document: ", document);
-      console.log("document body p: ", document.body.p);
     </script>
   </body>
 </html>
