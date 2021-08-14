@@ -2,23 +2,18 @@
 <html>
   <style>p{display:inline-block}</style>
   <body>
-    <form action="">
-      <label for="task">task</label>
-      <input type="text" name="task" id="task" />
-      <button type="submit"onclick="localStorage.setItem(task.value, task.value)">task up</button>
+    <form> 
+      <input type="text" name="task"/>
+      <button type="submit"onclick="localStorage.setItem(task.value, task.value)">add task</button>
     </form>
     <script defer>
-      function remove(el) {
-        localStorage.removeItem(el.id);
-        el.remove();
-        document.getElementById(el.id+"button").remove();
-      }
+      function remove(el) {localStorage.removeItem(el.id); el.remove(); document.getElementById(el.id+"button").remove()}
       for (let item in localStorage) {
-        if (!["[object HTMLInputElement]","[object Window]","length","clear","getItem","key","removeItem","setItem",].includes(item)) {
-          localStorage.setItem(item, item);
-          document.write("<p id=" + item + ">" + item + "</p>");
+        if (!["[object HTMLInputElement]","[object Window]","length","clear","getItem","key","removeItem","setItem"].includes(item)) {
+          localStorage.setItem(item, item)
+          document.write("<p id=" + item + ">" + item + "</p>")
           document.write(`<button id=${item}button onclick=javascript:remove(${item})>X</button>`)
-          document.write("<br />");
+          document.write("<br />")
         }
       }
     </script>
