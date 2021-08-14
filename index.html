@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <style>p{display:inline-block}</style>
   <body>
     <form action="">
       <label for="task">task</label>
@@ -16,8 +17,8 @@
         if (!["[object HTMLInputElement]","[object Window]","length","clear","getItem","key","removeItem","setItem",].includes(item)) {
           localStorage.setItem(item, item);
           document.write("<p id=" + item + ">" + item + "</p>");
-          document.write("<br />");
           document.write(`<button id=${item}button onclick=javascript:remove(${item})>X</button>`)
+          document.write("<br />");
         }
       }
     </script>
