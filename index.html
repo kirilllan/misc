@@ -8,9 +8,9 @@
     </form>
     <script defer>
       function remove(el) {
-        localStorage.removeItem(el);
-        document.getElementById(el).remove();
-        document.getElementById(el+"button").remove();
+        localStorage.removeItem(el.id);
+        el.remove();
+        document.getElementById(el.id+"button").remove();
       }
       for (let item in localStorage) {
         if (!["[object HTMLInputElement]","[object Window]","length","clear","getItem","key","removeItem","setItem",].includes(item)) {
