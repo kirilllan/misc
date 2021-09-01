@@ -1,0 +1,2 @@
+# Cloud computing is on-demand delivery via Internet of various IT resources. They do the complex heavy lifting and setting up the infrastructure, so you don’t have to build everything from ground up.
+Amazon Web Services is the biggest cloud computing provider, dominating the market for the past 10 years, currently having ~>30% of the market. Top competitors are MS Azure having ~20% and Google Cloud having ~<10%. Notable others are Alibaba Cloud, IBM Cloud, Oracle Cloud, VMware Cloud, Dell Cloud.
