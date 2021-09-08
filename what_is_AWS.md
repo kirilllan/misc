@@ -5,3 +5,8 @@ Cloud computing is on-demand delivery via Internet of various IT resources. They
   Learning AWS is a steep learning curve: gaining practical knowledge takes a few weeks and in a month or two you could expect to be undertaking professional work using AWS. Knowing one cloud computing platform makes transitioning to another one easier and of course you can know several of them simultaneously.
   
   One can try to get AWS certified. Exam costs scale up along with required knowledge to pass the exams. They are $100/$150/$300 per exam. Passing an exam will grant you a certificate.
+  
+  AWS is constantly adding new features and services, competing for their share of 300 billion USD cloud computing market. The market is expected to grow annually by 19% until 2028.  
+  List of services that AWS provides:
+compute – storage – database – blockchain -- customer engagement – satellite –analytics -- business apps – management -- security/identity — streaming – IoT –migration -- media services -- game development -- networking-developer tools --machine learning -- AR & VR -- cost management.
+
