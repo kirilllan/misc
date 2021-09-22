@@ -8,6 +8,7 @@ Create a ".env" file and add the following:
   
   Now start the container inside the terminal:
 █docker-compose up -d
+// but apparently you need docker compose yml file in root, included it in this same repo, 1 directory down (~50 lines)
  
 Once it is done, you should see the following:
 Creating drupal_db             ... done
