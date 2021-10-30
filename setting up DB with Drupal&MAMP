@@ -1,0 +1,4 @@
+Setting up DB with Drupal+MAMP:
+MAMP->Open WebStart page->Tools->phpMyAdmin->Databases->create
+->login credentials for DB can be found on MAMP start page (localhost:YOUR PORT, 80, 88 etc./MAMP)
+->if needed, select to use "opcache" from MAMP programs PHP section
